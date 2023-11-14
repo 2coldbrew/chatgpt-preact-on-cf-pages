@@ -64,7 +64,6 @@ export const Chat = () => {
           type="text"
           value={input}
           onInput={(e) => setInput((e.target as any)?.value ?? "")}
-{/*           maxLength={MAX_QUESTION_LENGTH} */}
           disabled={loading}
         />
         <div>
