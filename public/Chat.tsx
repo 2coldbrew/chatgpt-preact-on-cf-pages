@@ -4,7 +4,7 @@ import styles from "./Chat.module.css";
 
 // To save cost, limit the number of messages & length of questions to be sent to the server.
 const MAX_MESSAGES = 500;
-const MAX_QUESTION_LENGTH = 10000000000000000000000000000000000000000000000000;
+const MAX_QUESTION_LENGTH = 1000000000;
 
 export const Chat = () => {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -64,7 +64,7 @@ export const Chat = () => {
           type="text"
           value={input}
           onInput={(e) => setInput((e.target as any)?.value ?? "")}
-          maxLength={MAX_QUESTION_LENGTH}
+{/*           maxLength={MAX_QUESTION_LENGTH} */}
           disabled={loading}
         />
         <div>
