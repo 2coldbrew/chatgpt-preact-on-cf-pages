@@ -6,9 +6,9 @@ interface Env {
 
 const SYSTEM_MESSAGE = {
   role: "system",
-  content: "You are a helpful assistant.",
+  content: "You are the best assistant.",
 };
-const MODEL = "gpt-3.5-turbo";
+const MODEL = "gpt-4-1106-preview";
 
 const parseRequestBody = async (request: Request): Promise<Message[]> => {
   const body = await request.json();
